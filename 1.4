@@ -1,0 +1,51 @@
+
+This command will guide you through creating your pyproject.toml config.
+
+
+Using version ^0.123.9 for fastapi
+Using version ^0.38.0 for uvicorn
+Using version ^2.0.44 for sqlalchemy
+Using version ^0.9.0 for databases
+Using version ^1.17.2 for alembic
+Using version ^3.5.0 for python-jose
+Using version ^1.7.4 for passlib
+Using version ^2.12.5 for pydantic
+        You can specify a package in the following forms:
+          - A single name (requests): this will search for matches on PyPI
+          - A name and a constraint (requests@^2.23.0)
+          - A git url (git+https://github.com/python-poetry/poetry.git)
+          - A git url with a revision         (git+https://github.com/python-poetry/poetry.git#develop)
+          - A file path (../my-package/my-package.whl)
+          - A directory (../my-package/)
+          - A url (https://example.com/packages/my-package-0.1.0.tar.gz)
+        
+
+
+Generated file
+
+[project]
+name = "desafio-api-bancaria"
+version = "0.1.0"
+description = "\"API bancária assíncrona com FastAPI\""
+authors = [
+    {name = "douglasferreirag",email = "douglas.ferreirag@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.123.9,<0.124.0)",
+    "uvicorn[standard] (>=0.38.0,<0.39.0)",
+    "sqlalchemy (>=2.0.44,<3.0.0)",
+    "databases (>=0.9.0,<0.10.0)",
+    "alembic (>=1.17.2,<2.0.0)",
+    "python-jose[cryptography] (>=3.5.0,<4.0.0)",
+    "passlib (>=1.7.4,<2.0.0)",
+    "pydantic (>=2.12.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
